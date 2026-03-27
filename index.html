@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidharth Vakkan - Software Developer &amp; MERN Stack Engineer</title>
+    <meta name="description" content="Academic portfolio of Sidharth Thomas Vakkan V - aspiring software developer proficient in JavaScript, Python, and MERN stack technologies at St. Xavier's College, Mumbai." />
+
+    <!-- Favicon: SV icon (fuchsia square, white letters) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23D8125B'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='14' font-weight='700' fill='white'>SV</text></svg>" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ===================== NAVIGATION ===================== -->
+    <header class="nav-header" id="nav-header">
+        <nav class="nav-container" aria-label="Primary navigation">
+            <a href="#hero" class="nav-logo">SV</a>
+            <ul class="nav-links" role="list">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero" aria-label="Introduction">
+        <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+        <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+        <div class="hero-orb hero-orb-3" aria-hidden="true"></div>
+
+        <div class="hero-content">
+            <p class="hero-eyebrow reveal">Software Developer · Full-Stack Engineer · Analyst</p>
+            <h1 class="hero-name reveal reveal-delay-1">Sidharth Vakkan</h1>
+            <p class="hero-tagline reveal reveal-delay-2"><em class="tagline-word">Awesomeness</em></p>
+            <div class="hero-actions reveal reveal-delay-3">
+                <a href="#projects" class="btn btn-primary" id="hero-view-projects">View Projects</a>
+                <a href="Resume_Sidharth.pdf" download class="btn btn-outline" id="hero-download-resume">Download Resume</a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator" aria-hidden="true">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section" id="about" aria-label="About">
+        <div class="container">
+            <div class="section-label reveal">About</div>
+            <div class="about-grid" style="grid-template-columns: 1fr;">
+                <div class="about-text">
+                    <h2 class="section-heading reveal">Sidharth Thomas Vakkan V</h2>
+                    <p class="about-bio reveal reveal-delay-1">
+                        I am pursuing a dual degree in IT and BMS at St. Xavier's College, Mumbai, with a focus on full-stack software development and scalable system design. My work involves building MERN stack applications, crafting REST APIs, and integrating AI tools to solve real-world problems through code.
+                    </p>
+                    <p class="about-bio reveal reveal-delay-1">
+                        The intersection of software engineering, automation, and data is where I am most at home. Whether it is an AI-powered content generator or a complex data pipeline, I bring the same rigour and curiosity to every project.
+                    </p>
+                    <p class="about-bio reveal reveal-delay-1">
+                        Outside of academics, I lead creative teams, volunteer as a teaching mentor through Angel Xpress Foundation, and compete on the football pitch with the same intensity I bring to my work.
+                    </p>
+                    <div class="about-details reveal reveal-delay-2">
+                        <div class="about-detail-item">
+                            <span class="detail-label">Institution</span>
+                            <span class="detail-value">St. Xavier's College, Mumbai</span>
+                        </div>
+                        <div class="about-detail-item">
+                            <span class="detail-label">Degree</span>
+                            <span class="detail-value">BSc IT (SY) + BMS, 2024 to 2027</span>
+                        </div>
+                        <div class="about-detail-item">
+                            <span class="detail-label">Focus Areas</span>
+                            <span class="detail-value">JavaScript, Python, MERN Stack, REST APIs, Full-Stack Development</span>
+                        </div>
+                        <div class="about-detail-item">
+                            <span class="detail-label">Location</span>
+                            <span class="detail-value">Mumbai, India</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section section-alt" id="projects" aria-label="Projects">
+        <div class="container">
+            <div class="section-label reveal">Projects</div>
+            <h2 class="section-heading reveal">Selected Work</h2>
+            <p class="section-subtext reveal">Full-stack apps, AI automation workflows, and data analysis projects built with real-world impact.</p>
+            <div class="projects-grid">
+
+                <article class="project-card reveal" data-project="concreate">
+                    <div class="project-card-inner">
+                        <div class="project-meta">
+                            <span class="project-category">MERN Stack · OpenAI API</span>
+                            <span class="project-year">2025</span>
+                        </div>
+                        <h3 class="project-title">ConCreate: AI Content Generator</h3>
+                        <p class="project-desc">A full-stack MERN application that generates targeted marketing copy using the OpenAI API, with an Express.js backend and MongoDB to handle requests and store generation history.</p>
+                        <button class="project-cta" onclick="openModal('concreate')" aria-label="View ConCreate AI project details">View Details →</button>
+                    </div>
+                    <div class="project-card-glow" aria-hidden="true"></div>
+                </article>
+
+                <article class="project-card reveal reveal-delay-1" data-project="n8n">
+                    <div class="project-card-inner">
+                        <div class="project-meta">
+                            <span class="project-category">N8N · LLM · Automation</span>
+                            <span class="project-year">2025</span>
+                        </div>
+                        <h3 class="project-title">AI Content Marketing Automation Workflow</h3>
+                        <p class="project-desc">A fine-tuned LLM workflow in n8n automating end-to-end SEO content creation and publishing, enabling a client to publish 50+ keyword-optimised articles in minutes, reducing production time by 95%.</p>
+                        <button class="project-cta" onclick="openModal('n8n')" aria-label="View AI automation workflow details">View Details →</button>
+                    </div>
+                    <div class="project-card-glow" aria-hidden="true"></div>
+                </article>
+
+                <article class="project-card reveal reveal-delay-2" data-project="covid">
+                    <div class="project-card-inner">
+                        <div class="project-meta">
+                            <span class="project-category">SQL · Tableau · Analysis</span>
+                            <span class="project-year">2025</span>
+                        </div>
+                        <h3 class="project-title">Covid-19 Global Data Analysis</h3>
+                        <p class="project-desc">Explored global pandemic data using advanced SQL (JOINs, CTEs, window functions) and visualised infection rates, mortality, and vaccination trends across countries in Tableau.</p>
+                        <button class="project-cta" onclick="openModal('covid')" aria-label="View Covid-19 analysis details">View Details →</button>
+                    </div>
+                    <div class="project-card-glow" aria-hidden="true"></div>
+                </article>
+
+                <article class="project-card reveal" data-project="movie">
+                    <div class="project-card-inner">
+                        <div class="project-meta">
+                            <span class="project-category">Python · EDA · Statistics</span>
+                            <span class="project-year">2025</span>
+                        </div>
+                        <h3 class="project-title">Movie Industry Correlation Analysis</h3>
+                        <p class="project-desc">Exploratory data analysis on a large movie dataset using Python (Pandas, Seaborn, Matplotlib) to uncover statistical correlations between budget, revenue, and audience ratings.</p>
+                        <button class="project-cta" onclick="openModal('movie')" aria-label="View movie correlation analysis details">View Details →</button>
+                    </div>
+                    <div class="project-card-glow" aria-hidden="true"></div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal Overlay -->
+    <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-box">
+            <button class="modal-close" id="modal-close" aria-label="Close project details">&#x2715;</button>
+            <div class="modal-content" id="modal-content"></div>
+        </div>
+    </div>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section" id="skills" aria-label="Skills">
+        <div class="container">
+            <div class="section-label reveal">Expertise</div>
+            <h2 class="section-heading reveal">Skills &amp; Technologies</h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-category reveal">
+                    <h3 class="skill-category-title">MERN Stack &amp; Web Dev</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag primary">MongoDB</span>
+                        <span class="skill-tag primary">Express.js</span>
+                        <span class="skill-tag primary">React.js</span>
+                        <span class="skill-tag primary">Node.js</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">JSON</span>
+                        <span class="skill-tag">API Integration</span>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal reveal-delay-1">
+                    <h3 class="skill-category-title">Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag primary">JavaScript</span>
+                        <span class="skill-tag primary">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal reveal-delay-2">
+                    <h3 class="skill-category-title">Data &amp; Analytics</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag primary">SQL</span>
+                        <span class="skill-tag primary">Python (Pandas, NumPy)</span>
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Excel</span>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal reveal-delay-1">
+                    <h3 class="skill-category-title">Tools &amp; Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag primary">Git &amp; GitHub</span>
+                        <span class="skill-tag primary">SQLAlchemy</span>
+                        <span class="skill-tag">MS Word</span>
+                        <span class="skill-tag">MS PowerPoint</span>
+                    </div>
+                </div>
+
+                <div class="skill-category reveal reveal-delay-2">
+                    <h3 class="skill-category-title">Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag primary">Problem-Solving</span>
+                        <span class="skill-tag primary">Analytical Thinking</span>
+                        <span class="skill-tag">Debugging</span>
+                        <span class="skill-tag">Leadership</span>
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Adaptability</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CERTIFICATIONS ===================== -->
+    <section class="section section-alt" id="certifications" aria-label="Certifications">
+        <div class="container">
+            <div class="section-label reveal">Certifications</div>
+            <h2 class="section-heading reveal">Academic &amp; Professional Credentials</h2>
+            <div class="certs-grid">
+
+                <div class="cert-card reveal">
+                    <div class="cert-icon" aria-hidden="true">&#9672;</div>
+                    <div class="cert-info">
+                        <div class="cert-name">Build Your Own Chatbot</div>
+                        <div class="cert-issuer">IBM</div>
+                        <div class="cert-date">2025</div>
+                    </div>
+                </div>
+
+                <a class="cert-card reveal reveal-delay-1" href="https://drive.google.com/file/d/19Q8nnBrClGheKzD2RqADrmaHl4w-Rom1/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                    <div class="cert-icon" aria-hidden="true">&#9672;</div>
+                    <div class="cert-info">
+                        <div class="cert-name">MERN Stack Fundamentals</div>
+                        <div class="cert-issuer">Great Learning</div>
+                        <div class="cert-date">2025</div>
+                    </div>
+                    <span class="cert-arrow">&#8599;</span>
+                </a>
+
+                <a class="cert-card reveal reveal-delay-2" href="https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/MyXvBcppsW2FkNYCX_ifobHAoMjQs9s6bKS_68d9b181fcbd11287cdb305b_1760713762250_completion_certificate.pdf" target="_blank" rel="noopener noreferrer">
+                    <div class="cert-icon" aria-hidden="true">&#9672;</div>
+                    <div class="cert-info">
+                        <div class="cert-name">Tata Data Visualisation</div>
+                        <div class="cert-issuer">Forage (Tata Consultancy Services)</div>
+                        <div class="cert-date">2025</div>
+                    </div>
+                    <span class="cert-arrow">&#8599;</span>
+                </a>
+
+                <a class="cert-card reveal" href="https://www.theforage.com/completion-certificates/SKZxezskWgmFjRvj9/4Rfzeut8gXmNwfxXv_SKZxezskWgmFjRvj9_68d9b181fcbd11287cdb305b_1760785211933_completion_certificate.pdf" target="_blank" rel="noopener noreferrer">
+                    <div class="cert-icon" aria-hidden="true">&#9672;</div>
+                    <div class="cert-info">
+                        <div class="cert-name">BCG Introduction to Strategy Consulting</div>
+                        <div class="cert-issuer">Forage (Boston Consulting Group)</div>
+                        <div class="cert-date">2025</div>
+                    </div>
+                    <span class="cert-arrow">&#8599;</span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== RESUME ===================== -->
+    <section class="section" id="resume" aria-label="Resume">
+        <div class="container">
+            <div class="section-label reveal">Resume</div>
+            <h2 class="section-heading reveal">Curriculum Vitae</h2>
+            <div class="resume-layout">
+                <div class="resume-preview reveal">
+                    <div class="resume-sheet" aria-label="Resume preview">
+
+                        <!-- Header -->
+                        <div class="resume-sheet-header">
+                            <div class="rs-name">SIDHARTH THOMAS VAKKAN V</div>
+                            <div class="rs-contact">
+                                <span>+91 8089421512</span>
+                                <span><a href="mailto:sidharth.vakkan@xaviers.edu.in">sidharth.vakkan@xaviers.edu.in</a></span>
+                                <span>Mumbai</span>
+                                <span><a href="https://www.linkedin.com/in/sidharth-thomas-096534252/" target="_blank" rel="noopener noreferrer">LinkedIn</a></span>
+                            </div>
+                        </div>
+
+                        <!-- About -->
+                        <div class="rs-section">
+                            <div class="rs-section-title">About Me</div>
+                            <p class="rs-about-text">Aspiring Software Developer pursuing a dual degree in IT and BMS at St. Xavier's College, Mumbai. Proficient in JavaScript, Python, and MERN stack technologies, with hands-on experience building full-stack applications and REST APIs. Focused on developing scalable, efficient solutions and solving real-world problems through code.</p>
+                        </div>
+
+                        <!-- Education -->
+                        <div class="rs-section">
+                            <div class="rs-section-title">Education</div>
+                            <table class="rs-table">
+                                <thead>
+                                    <tr><th>Name of Exam</th><th>Name of Institution</th><th>Score</th><th>Year</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>BSC. IT (SY)</td><td>St. Xavier's College, Mumbai</td><td>8.28 CGPA</td><td>2024-2027</td></tr>
+                                    <tr><td>CBSE XII</td><td>Vidyodaya School, Thevekal</td><td>86%</td><td>2024</td></tr>
+                                    <tr><td>CBSE X</td><td>Vidyodaya School, Thevekal</td><td>89%</td><td>2022</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Academic Work -->
+                        <div class="rs-section">
+                            <div class="rs-section-title">Academic Work</div>
+                            <div class="rs-work-entry">
+                                <div class="rs-work-header">ConCreate: AI Content Generator | MERN Stack</div>
+                                <div class="rs-work-desc">Built a MERN-stack AI app that generates targeted marketing copy using the OpenAI API. Developed an Express.js backend with MongoDB to handle requests and store generation history.</div>
+                            </div>
+                            <div class="rs-work-entry">
+                                <div class="rs-work-header">AI Content Marketing Automation Workflow | N8N</div>
+                                <div class="rs-work-desc">Built and deployed a fine-tuned LLM workflow in n8n, automating end-to-end SEO content creation and publishing; enabling the client to publish 50+ well-researched keyword-optimised articles in minutes instead of months, reducing content production time by 95%.</div>
+                            </div>
+                            <div class="rs-work-entry">
+                                <div class="rs-work-header">Covid-19 Global Data Analysis | SQL + Tableau <span>2025</span></div>
+                                <div class="rs-work-desc">Explored global pandemic data using advanced SQL (JOINs, CTEs, window functions) and visualised infection rates, mortality, and vaccination trends across countries in Tableau.</div>
+                            </div>
+                            <div class="rs-work-entry">
+                                <div class="rs-work-header">Movie Industry Correlation Analysis | Python <span>2025</span></div>
+                                <div class="rs-work-desc">Performed exploratory data analysis on a large movie dataset using Python (Pandas, Seaborn, Matplotlib) to uncover statistical correlations between budget, revenue, and audience ratings.</div>
+                            </div>
+                        </div>
+
+                        <!-- Industry Experience -->
+                        <div class="rs-section">
+                            <div class="rs-section-title">Industry Experience</div>
+                            <div class="rs-exp-entry">
+                                <div class="rs-exp-header">Filming &amp; Documentation | Fincell, St. Xavier's College <span>Mumbai</span></div>
+                                <div class="rs-exp-desc">Led a team of 10+ editors, establishing streamlined workflows that improved project turnaround efficiency. Managed multiple documentation projects end-to-end, demonstrating strong leadership and project management skills.</div>
+                            </div>
+                            <div class="rs-exp-entry">
+                                <div class="rs-exp-header">Management Committee Member | Sitare, St. Xavier's College <span>Mumbai</span></div>
+                                <div class="rs-exp-desc">Collaborated with a 100+ member cross-functional team to plan and execute large-scale college events, demonstrating strong teamwork, communication, and problem-solving under pressure.</div>
+                            </div>
+                        </div>
+
+                        <!-- Certifications -->
+                        <div class="rs-section">
+                            <div class="rs-section-title">Certifications</div>
+                            <ul class="rs-cert-list">
+                                <li><strong>Build Your Own Chatbot</strong> - IBM</li>
+                                <li><strong>MERN Stack Fundamentals</strong> - Great Learning</li>
+                                <li><strong>Tata Data Visualisation</strong> - Forage</li>
+                                <li><strong>BCG Introduction to Strategy Consulting</strong> - Forage</li>
+                            </ul>
+                        </div>
+
+                        <!-- Skills -->
+                        <div class="rs-section">
+                            <div class="rs-section-title">Skills</div>
+                            <table class="rs-skills-table">
+                                <tr><td>Programming Languages</td><td>JavaScript, Python, Java, C++</td></tr>
+                                <tr><td>Web Dev (MERN Stack)</td><td>MongoDB, Express.js, React.js, Node.js, REST APIs, JSON, API Integration</td></tr>
+                                <tr><td>Tools</td><td>Git, SQLAlchemy, MS Word, MS PowerPoint</td></tr>
+                                <tr><td>Data Analysis &amp; Viz</td><td>SQL, Python (Pandas, NumPy), Tableau, Power BI, Microsoft Excel</td></tr>
+                                <tr><td>Soft Skills</td><td>Problem-Solving, Debugging, Logical Reasoning, Analytical Thinking, Team Collaboration</td></tr>
+                            </table>
+                        </div>
+
+                        <!-- Community -->
+                        <div class="rs-section">
+                            <div class="rs-section-title">Community Engagement</div>
+                            <div class="rs-exp-entry">
+                                <div class="rs-exp-header">Volunteer Educator | Angel Xpress Foundation <span>Nov 2024-Mar 2025</span></div>
+                                <div class="rs-exp-desc">Contributed 30+ hours of volunteer teaching, mentoring Grade 8 students in English and Mathematics. Designed structured lessons and interactive sessions to strengthen core academic foundations.</div>
+                            </div>
+                        </div>
+
+                        <!-- Languages & Hobbies -->
+                        <div class="rs-section">
+                            <div class="rs-section-title">Languages &amp; Hobbies</div>
+                            <table class="rs-skills-table">
+                                <tr><td>Languages</td><td>English: Proficient &nbsp;|&nbsp; Hindi: Proficient &nbsp;|&nbsp; Malayalam: Proficient &nbsp;|&nbsp; Spanish: Elementary</td></tr>
+                                <tr><td>Hobbies</td><td>Guitar &amp; Vocals &nbsp;|&nbsp; Video Editing &nbsp;|&nbsp; Football &nbsp;|&nbsp; Cooking/Baking</td></tr>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="resume-actions reveal reveal-delay-1">
+                    <p class="resume-note">A comprehensive resume detailing my academic background, full-stack projects, certifications, and leadership experience.</p>
+                    <a href="Resume_Sidharth.pdf" download class="btn btn-primary" id="download-resume-btn">Download PDF Resume</a>
+                    <p class="resume-update">Last updated March 2026</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section section-alt" id="contact" aria-label="Contact">
+        <div class="container">
+            <div class="section-label reveal">Contact</div>
+            <h2 class="section-heading reveal">Get In Touch</h2>
+            <p class="section-subtext reveal">Open to academic collaborations, internship opportunities, and software development discussions.</p>
+
+            <div class="contact-layout">
+                <div class="contact-info reveal">
+                    <div class="contact-item">
+                        <span class="contact-label">Email</span>
+                        <a href="mailto:sidharth.vakkan@xaviers.edu.in" class="contact-value">sidharth.vakkan@xaviers.edu.in</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/sidharth-thomas-096534252/" target="_blank" rel="noopener noreferrer" class="contact-value">linkedin.com/in/sidharth-thomas</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">GitHub</span>
+                        <a href="https://github.com/sidvak06/Portfolio_Projects" target="_blank" rel="noopener noreferrer" class="contact-value">github.com/sidvak06</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Phone</span>
+                        <a href="tel:+918089421512" class="contact-value">+91 80894 21512</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Location</span>
+                        <span class="contact-value">Mumbai, India</span>
+                    </div>
+                </div>
+
+                <form class="contact-form reveal reveal-delay-1" id="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="form-name" class="form-label">Name</label>
+                        <input type="text" id="form-name" name="name" class="form-input" placeholder="Your full name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="form-email" class="form-label">Email</label>
+                        <input type="email" id="form-email" name="email" class="form-input" placeholder="your.email@example.com" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="form-message" class="form-label">Message</label>
+                        <textarea id="form-message" name="message" class="form-input form-textarea" placeholder="Your message..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="form-submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer" aria-label="Footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <span class="footer-name">Sidharth Thomas Vakkan V</span>
+                <span class="footer-copy">© 2026 · All rights reserved</span>
+            </div>
+            <div class="footer-socials" aria-label="Social links">
+                <a href="https://github.com/sidvak06/Portfolio_Projects" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.021C22 6.484 17.522 2 12 2z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/sidharth-thomas-096534252/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+                <a href="mailto:sidharth.vakkan@xaviers.edu.in" class="footer-social-link" aria-label="Email">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
